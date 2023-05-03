@@ -1,0 +1,233 @@
+/*****général*****/
+header{
+    font-family: 'Roboto';
+}
+.main-container {
+    width: 100%;
+    max-width: 375px;
+    box-sizing: border-box;
+}
+/******header******/
+.logo > img {
+    width: 170px;
+    margin-top: 14px;
+    margin-left: 100px;
+    margin-bottom: 8px;
+}
+.location {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    background-color:#EAEAEA ;
+}
+.location>p {
+    padding-left: 17px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+}
+.entete {
+    background-color:#D2D2D2 ;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+h1  {
+    text-align: center;
+    padding-top: 0px;
+    font-size: 24px;
+    font-weight:700 ;
+
+}
+.title>p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #353535;
+}
+.button {
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA,#9356DC);
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.25);
+}
+.button:hover {
+    opacity: 0.8;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.35) ;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+}
+/********Fonctionnement*******/
+.fonctionnement{
+    font-family: 'Roboto';
+    color: black;
+    
+}
+.title2{
+    padding-top:20px ;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+.filtre1, .filtre2, .filtre3{
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    padding-top:8px ;
+    padding-bottom: 8px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    margin-left:20px ;
+    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+}
+.filtre1>p{
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+    margin-left: -10px;
+}
+.filtre2>p{
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+    margin-left: -10px;
+}
+.filtre3>p{
+    border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+    margin-left: -10px;
+}
+.fa-mobile-screen,.fa-list-ul,.fa-store{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+.fa-mobile-screen,.fa-list-ul{
+    color: #7E7E7E;
+}
+.fa-store{
+    color: #9356DC;
+}
+.choisissez,.composez,.degustez{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+/******Restaurants******/
+.restaurant{
+    background-color: #D2D2D2;
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-left:15px ;
+}
+.card1{
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color:white ;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.card1 img {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.cardcontent{
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: -10px;
+    padding-bottom: 1px;
+}
+.cardtext{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: -35px;
+    margin-top: -10px;
+}
+.cardtext>.cardtitle{
+    font-size: 18px;
+    font-weight: 700;
+}
+.cardtext>i{
+    font-size: 23px;
+    margin-top: 20px;
+}
+.cardtext>i:active{
+    color: linear-gradient(#9356DC,#FF79DA);
+    transform-origin: center center;
+    transform: scaleX(0);
+    transition: transform 1000ms cubic-bezier(.32,0,.07,1);
+}
+.subtitle>p{
+    font-size: 17px;
+}
+/******FOOTER*****/
+footer{
+    background-color: #353535;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Roboto';
+}
+.pied-de-page{
+    margin-left: 25px;
+}
+.title3{
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.proposer,.devenir{
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+.proposer>p{
+    margin-left: 13px;
+}
+.devenir>p{
+    margin-left: 10px;
+}
+.mention{
+    margin-bottom: -2px;
+}
