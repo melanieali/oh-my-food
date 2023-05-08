@@ -4,7 +4,6 @@ header{
 }
 .main-container {
     width: 100%;
-    max-width: 375px;
     box-sizing: border-box;
 }
 /******header******/
@@ -74,7 +73,6 @@ nav {
     padding-top:20px ;
     font-size: 16px;
     font-weight: 700;
-    
 }
 .filtre1, .filtre2, .filtre3{
     border-radius: 20px;
@@ -172,7 +170,7 @@ h3{
     background-color: #99E2D0 ;
     padding:7px 9px 7px 9px;
     position: absolute;
-    left: 270px;bottom: -150px;
+    left: 270px;bottom: -395px;
 }
 .new2 {
     font-family: 'Roboto';
@@ -181,7 +179,7 @@ h3{
     background-color: #99E2D0 ;
     padding:7px 9px 7px 9px;
     position: absolute;
-    left: 270px;bottom: -410px;
+    left: 270px;bottom: -660px;
 }
 
 .cardcontent{
@@ -246,4 +244,107 @@ footer{
 }
 .mention{
     margin-bottom: -2px;
+}
+
+
+/*******media queries*********/
+
+@media (min-width:960px){
+    .logo>img{
+        width: 190px;
+        margin-left: 500px;
+        margin-bottom: 20px;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .location{
+       width: 100%;
+
+    }
+    .entete{
+        width: 100%;
+    }
+    .title2{
+        font-family: 'Roboto';
+        font-size: 15px;
+        font-weight: 700;
+        padding-left:130px ;
+        margin-bottom: -10px;
+    }
+    .filtres{
+        display: flex;
+        justify-content:space-between;   
+        margin-left:110px;
+        margin-right:110px;
+        margin-bottom: -25px;
+    }
+    .filtre1, .filtre2, .filtre3{
+        padding-right:60px
+    }
+    .choisissez,.composez,.degustez{
+        font-size: 14px;
+    }
+    .card1{
+        width: 420px;
+    }
+    .restaucard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    .restaurant>h3{
+        padding-left: 130px;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .new{
+        left: 465px;bottom: 95px;
+    }
+    .new2{
+        left: 970px;bottom: 95px;
+    }
+    .title3{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 4;
+        margin-right: 60px;
+        margin-bottom: 7px;
+        font-size: 18px;
+    }
+    .footertext{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -65px;
+        margin-left: 410px;
+        font-size: 14px;
+    }
+    .pied-de-page{
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    .proposer{
+        padding-right: 14px;
+        margin-bottom: 0;
+        
+    }
+    .devenir{
+        padding-right: 40px;
+        margin-bottom: 0;
+    }
+    .mention{
+        padding-right: 10px;
+        margin-bottom: 15px;   
+    }
+    
+
+
 }
