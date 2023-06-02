@@ -1,27 +1,34 @@
-/********Général**********/
-.main-container {
-    width: 100%;
-    box-sizing: border-box;
+/********GENERAL**********/
+html,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+main, .main-container,footer{
+    overflow: hidden;
+}
+
 /*******HEADER********/
-.logo > img {
-    width: 170px;
-    margin-top: 14px;
-    margin-left: 65px;
-    margin-bottom: 8px;
-}
-.logo > .fa-arrow-left{
-    size: 20px;
-}
+
 .logo > a{
     color: #353535;
-    margin-left: 20px;
-}
-.logo{
+    font-size: 24px;
     display: flex;
-    align-items: center;
-    font-size: 22px;
-    margin-bottom: 5px;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-top: 15px
+}
+
+.imglogo>img{
+    width: 170px;
+}
+.imglogo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    margin-top: -25px;
 }
 .picture > img{
     width: 100%;
@@ -29,7 +36,8 @@
     object-fit: cover;
 }
 
-/********MAIN********/
+/********MAIN TITRE********/
+
 main {
     background-color: #F6F6F6;
     position: relative;
@@ -50,11 +58,31 @@ main {
     padding-left: 15px;
     margin-bottom: 0px;
 }
-.title1 > .fa-heart {
-    font-size: 25px;
-    padding-right: 25px;
-    margin-top: 12px;
+svg#heartAnimation{
+    width:25px;
+    height:25px;
+    fill:transparent;
+    stroke: rgba(0,0,0,1);
+    stroke-width:20;
+    transition:.5s all;
+    padding-right: 35px;
 }
+/*******ANIMATION COEUR*********/
+svg#heartAnimation:hover{
+    stroke-dasharray: 1056;
+    stroke-dashoffset: 1056;
+    animation: line-anim 1s ease forwards, fill-gradient 0.5s ease forwards .5s;
+}
+@keyframes line-anim {
+    to {stroke-dashoffset: 0;}
+}
+
+@keyframes fill-gradient {
+    from {fill: transparent;}
+    to {fill: url(#grad1);stroke-width: 0px;}
+}
+
+/***********TITRE CARTE*******/
 .entree {
     margin-left: 15px;
     padding-right: 317px;
@@ -68,38 +96,169 @@ main {
     padding-bottom: 6px;
     padding-top: 20px;
 }
+/********ANIMATION FADE IN*********/
+.entreefadein {
+    
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.platfadein {
+    
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.dessertfadein {
+    
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari et Chrome */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+/**********BOXCARD**********/
 .cardcontent {
     border-radius: 16px;
     background-color: white;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: -8px;
-    padding: 0px 15px 0px 15px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1)
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    
 }
-.title2 > h3 {
-    font-size: 18px;
-    font-family: 'Roboto';
-    padding-top: 10px;
-    margin-bottom: -8px;
-}
-.description {
+.cardcontent>.contentProduct{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.title2{
+    width: 240px ;
+}
+
+.title2 > h3 {
+    font-size: 16px;
+    font-family: 'Roboto';
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: -5px;
 
 }
-.description > .title3 {
-    font-size: 14px;
+.title2 > p {
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
+    font-size: 13px;
+    padding-left: 10px;
 }
-.description > .price {
-    font-size: 15px;
-    font-weight: 700;
+div.title2 > h3, div.title2 > p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
+.price{
+    margin-top: 30px;
+}
+
+div.checkboxOrder > svg.iconAdd{
+    width:25px;
+    height:25px;
+    fill:#fff;
+    padding:21px;
+    transform: rotate(0deg);
+    transition: .5s all;
+   
+   
+}
+/*********ANIMATION CHECKBOX**********/
+div.cardcontent > div.contentProduct > div.checkboxOrder{
+    width:0px;
+    overflow: hidden;
+    transition: .5s all;
+    background-color:#99E2D0;
+    border-radius: 0px 16px 16px 0px;
+    
+}
+div.cardcontent:hover > div.contentProduct > div.checkboxOrder{
+    width:60px;
+    transition: .5s all;
+}
+div.cardcontent:hover > div.contentProduct > div.checkboxOrder > svg.iconAdd{
+    transform: rotate(360deg);
+    transition: .5s all;
+    
+}
+
 /********BUTTON******/
+
 .button {
     border-radius: 25px;
     background: linear-gradient(#FF79DA,#9356DC);
@@ -123,7 +282,9 @@ nav {
     margin-top: 40px;
     padding-bottom: 40px;
 }
+
 /********FOOTER********/
+
 footer{
     background-color: #353535;
     padding-top: 20px;
@@ -156,63 +317,135 @@ footer{
 .mention{
     margin-bottom: -2px;
 }
-/*********media queries**********/
-@media (min-width:960px){
-.logo > img{
-    margin-left: 450px;
-}
-/**.picture > img{
-    border: 3px solid #99E2D0;
-}**/   
-main{
-    margin-left:140px ;
-    margin-right: 140px;
-    margin-top: -30px;
-    padding-left:150px ;
-    padding-right: 150px;
-}
-.title1{
-    display: flex;
-    justify-content: center;
-}
-.title1>h1{
-    padding-right: 20px;
-}
-.entree{
-    padding-right: 540px ;
-}
-.pied-de-page>.title3{
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 4;
-    margin-right: 60px;
-    margin-bottom: 7px;
-    font-size: 18px;
-}
-.footertext{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: -65px;
-    margin-left: 410px;
-    font-size: 14px;
-}
-.pied-de-page{
-    justify-content: space-between;
-    padding-top: 30px;
-}
-.proposer{
-    padding-right: 14px;
-    margin-bottom: 0;
-    
-}
-.devenir{
-    padding-right: 40px;
-    margin-bottom: 0;
-}
-.mention{
-    padding-right: 10px;
-    margin-bottom: 15px;   
-}
 
+
+/*********MEDIA QUERIES**********/
+@media (min-width:320px){
+    .entree{
+        padding-right: 270px;
+    }
+}
+@media (min-width:375px){
+    .entree{
+        padding-right: 320px;
+    }
+    .title2{
+        width: 270px ;
+    }
+}
+@media (min-width:425px){
+    .entree{
+        padding-right: 370px;
+    }
+    .title2{
+        width: 320px ;
+    }
+}
+@media (min-width:768px){
+
+    .entree{
+        padding-right: 715px ;
+    }
+    .title2{
+        width: 650px;
+    }
+    .title2>p{
+        font-size: 14px;
+    }
+}
+@media (min-width:960px){
+
+    /*********HEADER********/
+
+    .logo > img{
+    margin-left: 450px;
+    }
+
+    /********MENU*******/
+
+    main{
+        margin-left:140px ;
+        margin-right: 140px;
+        margin-top: -30px;
+        padding-left:150px ;
+        padding-right: 150px;
+    }
+    .title1{
+        display: flex;
+        justify-content: center;
+    }
+    .title1>h1{
+        padding-right: 20px;
+    }
+    .entree{
+        padding-right: 540px ;
+    }
+    .title2{
+        width:350px ;
+    }
+    .title2 > p{
+        font-size: 14px;
+    }
+
+    /********FOOTER******/
+   
+    .pied-de-page>.title3{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 60px;
+        margin-bottom: 7px;
+        font-size: 18px;
+    }
+    .footertext{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -65px;
+        margin-left: 410px;
+        font-size: 14px;
+    }
+    .pied-de-page{
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+    .proposer{
+        padding-right: 14px;
+        margin-bottom: 0;
+    }
+    .devenir{
+        padding-right: 40px;
+        margin-bottom: 0;
+    }
+    .mention{
+        padding-right: 10px;
+        margin-bottom: 15px;   
+    }
+
+}
+@media (min-width:1024px){
+
+    .entree{
+        padding-right: 390px ;
+    }
+    .footertext{
+        margin-left: 210px;
+    }
+}
+@media (min-width:1440px){
+
+    .entree{
+        padding-right: 805px;
+    }
+    .title2{
+        width: 750px;
+    }
+    .title2 > p{
+        font-size: 14px;
+    }
+    .footertext{
+        margin-left: 550px;
+    }
+    .title3{
+        padding-right: 40px;
+    }
 }

@@ -1,158 +1,306 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Menu-La note enchantée</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu-La note enchantée</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    >
 
-        <link rel="stylesheet" href="style2.css" />
-    </head>
-    <body>
-      <div class="main-container">
-        <header>
-          <div class="logo">
-            <a href="index.html">
-              <i class="fa-solid fa-arrow-left"></i>
-            </a>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <div class="imglogo">
             <img src="logo/ohmyfood.png" alt="logo">
           </div>
-          <div class="picture">
-            <img src="restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image la note enchantée">
-          </div>
-        </header>
+        </div>
+        <div class="picture">
+          <img
+            src="restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            alt="image la note enchantée"
+          >
+        </div>
+      </header>
+    </div>
     <main>
       <div class="title1">
         <h1>La note enchantée</h1>
-        <i class="fa-regular fa-heart"></i>
+        <svg
+        id="heartAnimation"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+        />
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color: #ff79da; stop-opacity: 1" />
+            <stop
+              offset="100%"
+              style="stop-color: #9356dc; stop-opacity: 1"
+            />
+          </linearGradient>
+        </defs>
+      </svg>
       </div>
-      <div class="entree">
-        <h2>ENTRÉES</h2>
-      </div>
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Raviole de foie gras</h3>
+      <div class="entreefadein">
+        <div class="entree">
+          <h2>ENTRÉES</h2>
         </div>
-        <div class="description">
-          <p class="title3">Accompagnées de leur crème de truffe</p>
-          <p class="price">25€</p>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Raviole de foie gras</h3>
+              <p>Accompagnées de leur créme à la truffe</p>
+            </div>
+            <div class="price">25€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
-      </div>    
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Caviar osciètre</h3>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Caviar osciètre</h3>
+              <p>Sur blini à la farine de blé noir</p>
+            </div>
+            <div class="price">35€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="description">
-          <p class="title3">Sur blini à la farine de blé noir</p>
-          <p class="price">35€</p>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Homar et espuma de potiron</h3>
+              <p>Marinés aux zestes d'orange</p>
+            </div>
+            <div class="price">20€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Homard et espuma de potiron</h3>
-        </div>
-        <div class="description">
-          <p class="title3">Mariné aux zestes d'orange</p>
-          <p class="price">20€</p>
-        </div>
-      </div>
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Foie gras de canard cuit entier</h3>
-        </div>
-        <div class="description">
-          <p class="title3">Confiture de figue et pain toasté</p>
-          <p class="price">35€</p>
-        </div>
-      </div>
-      <div class="entree">
-        <h2>PLATS</h2>
-      </div>
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Noix de coquille Saint-Jacques</h3>
-        </div>
-        <div class="description">
-          <p class="title3">Sur lit de purée de céleri-rave</p>
-          <p class="price">40€</p>
-        </div>
-      </div>    
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Langoustine poêlée</h3>
-        </div>
-        <div class="description">
-          <p class="title3">Purée de patate douce</p>
-          <p class="price">35€</p>
-        </div>
-      </div>
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Mijoté de queue de bœuf</h3>
-        </div>
-        <div class="description">
-          <p class="title3">Et riz sauvage aux zestes de citron</p>
-          <p class="price">45€</p>
-        </div>
-      </div>
-      <div class="entree">
-        <h2>DESSERTS</h2>
-      </div>
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Macaron noisette et chocolat</h3>
-        </div>
-        <div class="description">
-          <p class="title3">Glace au caramel brun et sel de guérande</p>
-          <p class="price">18€</p>
-        </div>
-      </div>    
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Baba au rhum revisité</h3>
-        </div>
-        <div class="description">
-          <p class="title3">Avec son coulis citron</p>
-          <p class="price">22€</p>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Foie gras de canard cuit entier</h3>
+              <p>Confiture de figue et pain toasté</p>
+            </div>
+            <div class="price">35€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="cardcontent">
-        <div class="title2">
-          <h3>Tarte citron meringuée</h3>
+      <div class="platfadein">
+        <div class="entree">
+          <h2>PLATS</h2>
         </div>
-        <div class="description">
-          <p class="title3">Déstructurée</p>
-          <p class="price">23€</p>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Noix de coquille Saint-Jacques</h3>
+              <p>Sur lit de purée de céleri-rave</p>
+            </div>
+            <div class="price">40€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Langoustine poêlée</h3>
+              <p>Purée de patate douce</p>
+            </div>
+            <div class="price">35€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Mijoté de queue de bœuf</h3>
+              <p>Et riz sauvage aux zestes de citron</p>
+            </div>
+            <div class="price">45€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-      <section class="buttoncommander">
+      <div class="dessertfadein">
+        <div class="entree">
+          <h2>DESSERTS</h2>
+        </div>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Macaron noisette et chocolat</h3>
+              <p>Glace au caramel brun et sel de guérande</p>
+            </div>
+            <div class="price">18€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Baba au rhum revisité</h3>
+              <p>Avec son coulis de citron</p>
+            </div>
+            <div class="price">22€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="cardcontent">
+          <div class="contentProduct">
+            <div class="title2">
+              <h3>Tarte au citron meringuée</h3>
+              <p>Déstructurée</p>
+            </div>
+            <div class="price">23€</div>
+            <div class="checkboxOrder">
+              <svg
+                class="iconAdd"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttoncommander">
         <nav>
-          <a class="button" href="##">Commander</a>  
+          <a class="button" href="#">Commander</a>
         </nav>
-      </section>                                
+      </div>
     </main>
     <footer>
       <section class="pied-de-page">
-          <div class="title3">
-              <h4>ohmyfood</h4>
-          </div>
-          <div class="footertext">
+        <div class="title3">
+          <h4>ohmyfood</h4>
+        </div>
+        <div class="footertext">
           <div class="proposer">
-              <i class="fa-solid fa-utensils"></i>
-              <p>Proposer un restaurant</p>
+            <i class="fa-solid fa-utensils"></i>
+            <p>Proposer un restaurant</p>
           </div>
           <div class="devenir">
-              <i class="fa-solid fa-handshake-angle"></i>
-              <p>Devenir partenaire</p>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
           </div>
           <p class="mention">Mentions légales</p>
           <p class="contact">Contact</p>
         </div>
       </section>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
